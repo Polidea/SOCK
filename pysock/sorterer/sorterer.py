@@ -42,6 +42,7 @@ def sort_critical_sections_in_pbx_file(pbx_file_path):
     sort_lines_in_section(section_key='PBXGroup', lines=raw_lines)
     sort_lines_in_section(section_key='PBXResourcesBuildPhase', lines=raw_lines)
     sort_lines_in_section(section_key='PBXSourcesBuildPhase', lines=raw_lines)
+    sort_lines_in_section(section_key='PBXHeadersBuildPhase', lines=raw_lines)
 
     write_sorted_raw_lines(raw_lines, pbx_file_path)
 
